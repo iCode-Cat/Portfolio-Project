@@ -24,6 +24,10 @@
         padding: 2rem;
         font-size: 1.2rem;
     }
+    span{
+        color:  #4bffa5;
+        margin-left: 0.4rem;
+    }   
 }
 
 @media screen and (min-width:1000px) {
@@ -35,8 +39,7 @@
         p {
             max-width: 800px;
             font-size: 1.5rem;
-            
-            
         }
-    }
+        
+     }
 }
