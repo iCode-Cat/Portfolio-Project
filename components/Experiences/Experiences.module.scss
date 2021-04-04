@@ -1,0 +1,41 @@
+.container {
+   
+    display: flex;
+    color: #fff;
+    padding: 2rem;
+    gap: 20px;
+    flex-wrap: wrap;
+    .flex {
+        text-align: center;
+        border: rgba(255, 255, 255, 0.5) solid 1px;
+        padding: 2rem;
+        gap: 10px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+  
+
+    i {
+        font-size: 3rem;
+        color: #4bffa5;
+    }
+    p {
+        font-size: 1rem;
+       
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        padding: 1rem 15rem;
+    }
+   .flex {
+    flex-basis: 45%;
+    
+
+   }
+}
