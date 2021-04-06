@@ -1,3 +1,5 @@
+
+
 .container {
    
     display: flex;
@@ -7,7 +9,7 @@
     flex-wrap: wrap;
     .flex {
         text-align: center;
-        border: rgba(255, 255, 255, 0.5) solid 1px;
+        border: rgba(255, 255, 255, 0.20) solid 1px;
         padding: 2rem;
         gap: 10px;
         flex-grow: 1;
@@ -15,6 +17,7 @@
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
+        width: 200px;
     }
 
   
@@ -27,11 +30,14 @@
         font-size: 1rem;
        
     }
+    h1 {
+        flex-basis: 100%;
+    }
 }
 
 @media screen and (min-width:1200px) {
     .container {
-        padding: 1rem 15rem;
+        padding: 2rem 0rem;
     }
    .flex {
     flex-basis: 45%;
