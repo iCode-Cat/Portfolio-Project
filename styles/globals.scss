@@ -20,3 +20,40 @@ a {
   box-sizing: border-box;
 }
 
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.active {
+  color: #4bffa5;
+}
+
+.false {
+animation-name: fade;
+animation-duration: 1s;
+}
+
+
+
+//Global animations
+@keyframes fade {
+  0% {
+    color: #4bffa5;
+  }
+
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+

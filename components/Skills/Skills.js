@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import style from './Skills.module.scss';
 const Skills = () => {
-    const [experience, setExperience] = useState(
+    const [skills, setSkills] = useState(
         [
             
         {icon:'devicon-html5-plain',title:'HTML', caption:'caption'},
@@ -17,7 +17,7 @@ const Skills = () => {
     
     return <div className={style.container}>
         <h1>Coding Skills</h1>
-        {experience.map(x => <div className={style.flex}>
+        {skills.map((x,i) => <div key={i} className={style.flex}>
             <p><i className={x.icon}></i></p>
             <p>{x.title}</p>
             {/* <p>{x.caption}</p> */}

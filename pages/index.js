@@ -3,6 +3,7 @@ import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'
 import Profile from '../components/Profile/Profile'
 import Skills from '../components/Skills/Skills'
+import Projects from '../components/Projects/Projects'
 import styles from '../styles/Home.module.scss'
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <div className={styles.line}>
       <Profile/>
       <Skills/>
+      <Projects/>
       </div>
 
     </div>
