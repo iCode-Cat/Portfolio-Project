@@ -6,6 +6,9 @@ const Projects = () => {
             
             {title:'FRONT', front:true, back:false},
             {title:'BACK', front:false, back:true},
+            {title:'FRONT', front:true, back:false},
+            {title:'BACK', front:false, back:true},
+            {title:'FULL', front:true, back:true},
             {title:'FULL', front:true, back:true},
             
     ]

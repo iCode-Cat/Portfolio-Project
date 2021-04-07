@@ -4,15 +4,15 @@
    
     
     
-    height:600px;
-    overflow: auto;
+    min-height:800px;
     color: #fff;
     padding: 2rem;
     gap: 20px;
     
 
     .wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
         flex-wrap: wrap;
         gap: 20px;
     }
@@ -24,9 +24,10 @@
         cursor: pointer;
     }
     .flex {
+        flex-grow: 1;
+        height: 200px;
         cursor: pointer;
         transition: 0.3s;
-        height: 200px;
         text-align: center;
         border: rgba(255, 255, 255, 0.20) solid 1px;
         padding: 2rem;
@@ -64,12 +65,18 @@
     opacity: 50%;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:800px) {
     .container {
         padding: 2rem 0rem;
+        height:600px;
+        overflow: auto;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr 1fr !important; 
     }
    .flex {
-    flex-basis: 45%;
+   
     
 
    }
